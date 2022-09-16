@@ -14,7 +14,7 @@ import javax.servlet.Filter;
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
-    @Bean
+//    @Bean
     public FilterRegistrationBean logFilter() {
         FilterRegistrationBean<Filter> registrationBean = new FilterRegistrationBean<>();
         registrationBean.setFilter(new LogFilter());
